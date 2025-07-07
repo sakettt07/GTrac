@@ -1,0 +1,76 @@
+{
+  "updatedAt": "07 July 2025 11:43:26",
+  "vehicleCount": 10,
+  "vehicles": [
+    {
+      "vehicleNumber": "HR55AA9577",
+      "driver": { "name": "Bunty Sharma", "contact": "9685335077" },
+      "location": { "poi": "P.G Mandideep", "insidePOI": true, "lat": 23.1107, "lng": 75.5214 },
+      "status": { "speed": 9, "ignition": true, "alert": false },
+      "lastUpdated": "07 July 2025 11:43"
+    },
+    {
+      "vehicleNumber": "NL01AF8050",
+      "driver": { "name": "Pradeep Kulpade", "contact": "8770826115" },
+      "location": { "poi": "Mumbai NH", "insidePOI": false, "lat": 25.8148, "lng": 77.7637 },
+      "status": { "speed": 51.49, "ignition": true, "alert": true },
+      "lastUpdated": "07 July 2025 11:43"
+    },
+    {
+      "vehicleNumber": "MP09CD6721",
+      "driver": { "name": "Rohit Dubey", "contact": "9425841233" },
+      "location": { "poi": "Indore Square", "insidePOI": true, "lat": 22.7196, "lng": 75.8577 },
+      "status": { "speed": 0, "ignition": true, "alert": false },
+      "lastUpdated": "07 July 2025 11:42"
+    },
+    {
+      "vehicleNumber": "DL3CAB3456",
+      "driver": { "name": "Ankit Tiwari", "contact": "9988776655" },
+      "location": { "poi": "CP, Delhi", "insidePOI": false, "lat": 28.6315, "lng": 77.2167 },
+      "status": { "speed": 0, "ignition": false, "alert": false },
+      "lastUpdated": "07 July 2025 11:42"
+    },
+    {
+      "vehicleNumber": "GJ01BA1290",
+      "driver": { "name": "Ramesh Patel", "contact": "9876543210" },
+      "location": { "poi": "SG Highway", "insidePOI": false, "lat": 23.0333, "lng": 72.6167 },
+      "status": { "speed": 45.25, "ignition": true, "alert": false },
+      "lastUpdated": "07 July 2025 11:41"
+    },
+    {
+      "vehicleNumber": "MH12KL9988",
+      "driver": { "name": "Sunil Jadhav", "contact": "9512345678" },
+      "location": { "poi": "Shivaji Nagar", "insidePOI": true, "lat": 18.5308, "lng": 73.8478 },
+      "status": { "speed": 0, "ignition": false, "alert": false },
+      "lastUpdated": "07 July 2025 11:41"
+    },
+    {
+      "vehicleNumber": "KA05MG7788",
+      "driver": { "name": "Ravi Kumar", "contact": "8796543210" },
+      "location": { "poi": "Electronic City", "insidePOI": true, "lat": 12.8452, "lng": 77.6602 },
+      "status": { "speed": 65, "ignition": true, "alert": false },
+      "lastUpdated": "07 July 2025 11:40"
+    },
+    {
+      "vehicleNumber": "WB06AD1122",
+      "driver": { "name": "Amit Sengupta", "contact": "7001122334" },
+      "location": { "poi": "Howrah Bridge", "insidePOI": false, "lat": 22.5855, "lng": 88.3467 },
+      "status": { "speed": 10.4, "ignition": true, "alert": true },
+      "lastUpdated": "07 July 2025 11:39"
+    },
+    {
+      "vehicleNumber": "CH01BC9900",
+      "driver": { "name": "Karan Singh", "contact": "9878011223" },
+      "location": { "poi": "Sector 17", "insidePOI": false, "lat": 30.7415, "lng": 76.7681 },
+      "status": { "speed": 0, "ignition": true, "alert": false },
+      "lastUpdated": "07 July 2025 11:39"
+    },
+    {
+      "vehicleNumber": "RJ14CP1123",
+      "driver": { "name": "Mohit Meena", "contact": "9123456677" },
+      "location": { "poi": "MI Road", "insidePOI": false, "lat": 26.9124, "lng": 75.7873 },
+      "status": { "speed": 23.8, "ignition": true, "alert": false },
+      "lastUpdated": "07 July 2025 11:38"
+    }
+  ]
+}
