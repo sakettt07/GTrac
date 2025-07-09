@@ -18,7 +18,7 @@ const Sidebar = ({ isOpen, onSelect }) => {
 
   return (
     <div
-      className={`fixed top-16 z-40 bg-white text-green-950 h-full p-4 space-y-3 flex flex-col items-center transition-transform duration-300
+      className={`fixed top-16 z-40 bg-black shadow-white shadow-md text-white h-full p-4 space-y-3 flex flex-col items-center transition-transform duration-300
       md:w-20 md:left-0 ${isOpen ? 'left-0 w-64' : 'left-[-100%] md:left-0'}`}
     >
       <button
@@ -37,10 +37,10 @@ const Sidebar = ({ isOpen, onSelect }) => {
         >
           <Link
             to={item.path}
-            className="hover:bg-black hover:text-white w-12 h-12 p-3 rounded-full flex items-center justify-center cursor-pointer"
+            className="hover:bg-white hover:text-black w-12 h-12 p-3 rounded-full flex items-center justify-center cursor-pointer"
           >
             {item.icon}
-            <span className="absolute left-14 top-1/2 -translate-y-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap">
+            <span className="absolute left-14 top-1/2 -translate-y-1/2 bg-white text-black text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap">
               {item.label}
             </span>
           </Link>

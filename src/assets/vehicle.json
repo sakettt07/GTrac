@@ -1,5 +1,5 @@
 {
-  "updatedAt": "07 July 2025 11:43:26",
+  "updatedAt": "07 July 2025 17:40:26",
   "vehicleCount": 10,
   "vehicles": [
     {
@@ -16,6 +16,76 @@
       "status": { "speed": 51.49, "ignition": true, "alert": true },
       "lastUpdated": "07 July 2025 11:43"
     },
+    {
+    "vehicleNumber": "KA03MK3321",
+    "driver": { "name": "Anil Joshi", "contact": "9823023456" },
+    "location": { "poi": "Majestic Bus Stand", "insidePOI": true, "lat": 12.9763, "lng": 77.5712 },
+    "status": { "speed": 0, "ignition": false, "alert": false },
+    "lastUpdated": "07 July 2025 11:29"
+  },
+  {
+    "vehicleNumber": "AP29CH1020",
+    "driver": { "name": "Suresh Naidu", "contact": "9988772211" },
+    "location": { "poi": "Gachibowli", "insidePOI": true, "lat": 17.4448, "lng": 78.3498 },
+    "status": { "speed": 50, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:28"
+  },
+  {
+    "vehicleNumber": "HR26DK8800",
+    "driver": { "name": "Kamal Verma", "contact": "9876549921" },
+    "location": { "poi": "Cyber Hub", "insidePOI": false, "lat": 28.4976, "lng": 77.0905 },
+    "status": { "speed": 72, "ignition": true, "alert": true },
+    "lastUpdated": "07 July 2025 11:27"
+  },
+  {
+    "vehicleNumber": "MP09CC6655",
+    "driver": { "name": "Ritik Sharma", "contact": "7896543210" },
+    "location": { "poi": "Rajwada", "insidePOI": false, "lat": 22.7196, "lng": 75.8577 },
+    "status": { "speed": 0, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:26"
+  },
+  {
+    "vehicleNumber": "JK01AB1234",
+    "driver": { "name": "Yasir Khan", "contact": "9796012345" },
+    "location": { "poi": "Lal Chowk", "insidePOI": true, "lat": 34.0837, "lng": 74.7973 },
+    "status": { "speed": 15, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:25"
+  },
+  {
+    "vehicleNumber": "OD02AZ4321",
+    "driver": { "name": "Bijay Sahu", "contact": "9337001122" },
+    "location": { "poi": "Master Canteen", "insidePOI": false, "lat": 20.2702, "lng": 85.8334 },
+    "status": { "speed": 35, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:24"
+  },
+  {
+    "vehicleNumber": "AS01EF6543",
+    "driver": { "name": "Dipak Das", "contact": "9435011223" },
+    "location": { "poi": "Paltan Bazaar", "insidePOI": true, "lat": 26.1735, "lng": 91.7452 },
+    "status": { "speed": 5, "ignition": true, "alert": true },
+    "lastUpdated": "07 July 2025 11:23"
+  },
+  {
+    "vehicleNumber": "BR01CD7865",
+    "driver": { "name": "Ajay Kumar", "contact": "8527011234" },
+    "location": { "poi": "Patna Junction", "insidePOI": true, "lat": 25.6057, "lng": 85.1234 },
+    "status": { "speed": 0, "ignition": false, "alert": false },
+    "lastUpdated": "07 July 2025 11:22"
+  },
+  {
+    "vehicleNumber": "CG04LM5678",
+    "driver": { "name": "Rajesh Netam", "contact": "9329012345" },
+    "location": { "poi": "Raipur Railway Station", "insidePOI": false, "lat": 21.2514, "lng": 81.6296 },
+    "status": { "speed": 40, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:21"
+  },
+  {
+    "vehicleNumber": "KL07MJ8888",
+    "driver": { "name": "Naveen Joseph", "contact": "9847012233" },
+    "location": { "poi": "Lulu Mall", "insidePOI": true, "lat": 10.0266, "lng": 76.3081 },
+    "status": { "speed": 60, "ignition": true, "alert": true },
+    "lastUpdated": "07 July 2025 11:20"
+  },
     {
       "vehicleNumber": "MP09CD6721",
       "driver": { "name": "Rohit Dubey", "contact": "9425841233" },
@@ -71,6 +141,196 @@
       "location": { "poi": "MI Road", "insidePOI": false, "lat": 26.9124, "lng": 75.7873 },
       "status": { "speed": 23.8, "ignition": true, "alert": false },
       "lastUpdated": "07 July 2025 11:38"
+    },
+    {
+    "vehicleNumber": "MH12KT4590",
+    "driver": { "name": "Sneha Patil", "contact": "9876543210" },
+    "location": { "poi": "Shivaji Nagar", "insidePOI": true, "lat": 18.5305, "lng": 73.8478 },
+    "status": { "speed": 45.2, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:37"
+  },
+  {
+    "vehicleNumber": "TN10GH7766",
+    "driver": { "name": "Arun Raj", "contact": "9360023456" },
+    "location": { "poi": "T Nagar", "insidePOI": false, "lat": 13.0426, "lng": 80.2337 },
+    "status": { "speed": 0, "ignition": false, "alert": false },
+    "lastUpdated": "07 July 2025 11:35"
+  },
+  {
+    "vehicleNumber": "DL8CAF9988",
+    "driver": { "name": "Rohit Sharma", "contact": "9810011122" },
+    "location": { "poi": "Connaught Place", "insidePOI": true, "lat": 28.6315, "lng": 77.2167 },
+    "status": { "speed": 80, "ignition": true, "alert": true },
+    "lastUpdated": "07 July 2025 11:34"
+  },
+  {
+    "vehicleNumber": "GJ01AB5544",
+    "driver": { "name": "Mehul Shah", "contact": "9825011223" },
+    "location": { "poi": "SG Highway", "insidePOI": false, "lat": 23.0558, "lng": 72.5346 },
+    "status": { "speed": 56, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:32"
+  },
+  {
+    "vehicleNumber": "TN22BG4567",
+    "driver": { "name": "Muthu Raj", "contact": "9003156789" },
+    "location": { "poi": "Marina Beach", "insidePOI": true, "lat": 13.0500, "lng": 80.2824 },
+    "status": { "speed": 0, "ignition": false, "alert": false },
+    "lastUpdated": "07 July 2025 11:19"
+  },
+  {
+    "vehicleNumber": "MH14FN9087",
+    "driver": { "name": "Sunita Gaikwad", "contact": "9134567889" },
+    "location": { "poi": "Hinjewadi Phase 3", "insidePOI": false, "lat": 18.5946, "lng": 73.7381 },
+    "status": { "speed": 20.5, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:18"
+  },
+  {
+    "vehicleNumber": "DL3CAX2345",
+    "driver": { "name": "Nikhil Sharma", "contact": "9811223344" },
+    "location": { "poi": "Karol Bagh", "insidePOI": true, "lat": 28.6517, "lng": 77.1907 },
+    "status": { "speed": 62.3, "ignition": true, "alert": true },
+    "lastUpdated": "07 July 2025 11:17"
+  },
+  {
+    "vehicleNumber": "GJ05HU1234",
+    "driver": { "name": "Kalpesh Patel", "contact": "8866554433" },
+    "location": { "poi": "Dumas Beach", "insidePOI": false, "lat": 21.0833, "lng": 72.6500 },
+    "status": { "speed": 0, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:16"
+  },
+  {
+    "vehicleNumber": "RJ19RK6789",
+    "driver": { "name": "Mahendra Singh", "contact": "7878787878" },
+    "location": { "poi": "Hawa Mahal", "insidePOI": true, "lat": 26.9239, "lng": 75.8267 },
+    "status": { "speed": 48.7, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:15"
+  },
+  {
+    "vehicleNumber": "WB24QT3344",
+    "driver": { "name": "Partha Dey", "contact": "9831045678" },
+    "location": { "poi": "Science City", "insidePOI": true, "lat": 22.5371, "lng": 88.4038 },
+    "status": { "speed": 33.0, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:14"
+  },
+  {
+    "vehicleNumber": "CH04TR7860",
+    "driver": { "name": "Sandeep Thakur", "contact": "9915992233" },
+    "location": { "poi": "Rock Garden", "insidePOI": true, "lat": 30.7520, "lng": 76.8057 },
+    "status": { "speed": 0, "ignition": false, "alert": false },
+    "lastUpdated": "07 July 2025 11:13"
+  },
+  {
+    "vehicleNumber": "UP78BN5643",
+    "driver": { "name": "Rakesh Gupta", "contact": "8888994455" },
+    "location": { "poi": "Cantonment", "insidePOI": false, "lat": 26.7587, "lng": 83.3732 },
+    "status": { "speed": 55.8, "ignition": true, "alert": true },
+    "lastUpdated": "07 July 2025 11:12"
+  },
+  {
+    "vehicleNumber": "PB11TX9988",
+    "driver": { "name": "Harjeet Kaur", "contact": "9988665544" },
+    "location": { "poi": "Golden Temple", "insidePOI": true, "lat": 31.6200, "lng": 74.8765 },
+    "status": { "speed": 0, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:11"
+  },
+  {
+    "vehicleNumber": "AN01EF1234",
+    "driver": { "name": "Joseph Dsouza", "contact": "9434267890" },
+    "location": { "poi": "Port Blair Airport", "insidePOI": true, "lat": 11.6411, "lng": 92.7297 },
+    "status": { "speed": 25.6, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:10"
+  },
+  {
+    "vehicleNumber": "UP32HT2321",
+    "driver": { "name": "Imran Khan", "contact": "8800332211" },
+    "location": { "poi": "Hazratganj", "insidePOI": true, "lat": 26.8467, "lng": 80.9462 },
+    "status": { "speed": 0, "ignition": false, "alert": false },
+    "lastUpdated": "07 July 2025 11:31"
+  },
+  {
+    "vehicleNumber": "PB10XY8822",
+    "driver": { "name": "Gurpreet Singh", "contact": "9988776655" },
+    "location": { "poi": "Phase 7", "insidePOI": true, "lat": 30.7046, "lng": 76.7179 },
+    "status": { "speed": 12.5, "ignition": true, "alert": false },
+    "lastUpdated": "07 July 2025 11:30"
+  }
+  ],
+  "notifications":[
+    {
+    "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+    "title": "Vehicle A Stopped",
+    "description": "Vehicle A has stopped near Ramesh Nagar.",
+    "time": "2 mins ago"
+    },
+        {
+    "avatar": "https://randomuser.me/api/portraits/women/45.jpg",
+    "title": "Overspeed Alert",
+    "description": "Vehicle B was overspeeding on NH4",
+    "time": "12 mins ago"
+    },
+        {
+    "avatar": "https://randomuser.me/api/portraits/men/66.jpg",
+    "title": "Maintenance Due",
+    "description": "Vehicle R is due for maintenance",
+    "time": "20 mins ago"
+    },
+        {
+    "avatar": "https://randomuser.me/api/portraits/men/42.jpg",
+    "title": "Vehicle A Stopped",
+    "description": "Vehicle A has stopped near Ramesh Nagar.",
+    "time": "2 mins ago"
+    },
+        {
+    "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+    "title": "Vehicle A Stopped",
+    "description": "Vehicle A has stopped near Ramesh Nagar.",
+    "time": "2 mins ago"
     }
+  ],
+  "logs":[
+        {
+      "type": "movement",
+      "duration": "45m",
+      "distance": "25.3 KM",
+      "startLocation": "Mumbai Central Station",
+      "endLocation": "Pune Bypass",
+      "startTime": "2025-07-08T09:15:00",
+      "endTime": "2025-07-08T10:00:00"
+    },
+    {
+      "type": "stoppage",
+      "duration": "1h 15m",
+      "location": "Dadar (West)",
+      "time": "2025-07-08T10:05:00"
+    },
+    {
+      "type": "alert",
+      "alertType": "Overspeed",
+      "location": "Worli Sea Link",
+      "time": "2025-07-08T10:30:00"
+    },
+    {
+      "type": "movement",
+      "duration": "30m",
+      "distance": "14.1 KM",
+      "startLocation": "Vashi Toll Plaza",
+      "endLocation": "Belapur Sector 15",
+      "startTime": "2025-07-08T12:00:00",
+      "endTime": "2025-07-08T12:30:00"
+    },
+    {
+      "type": "stoppage",
+      "duration": "20m",
+      "location": "Andheri Station",
+      "time": "2025-07-08T13:15:00"
+    },
+    {
+      "type": "alert",
+      "alertType": "Harsh Braking",
+      "location": "Bandra Kurla Complex",
+      "time": "2025-07-08T14:45:00"
+    }
+
   ]
+  
 }
