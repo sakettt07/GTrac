@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { MapPinHouse, Menu, SlidersHorizontal } from "lucide-react";
 import logo from "../assets/logoo.png";
 import { IoSettingsOutline, IoNotificationsCircle } from "react-icons/io5";
@@ -8,9 +8,9 @@ import { RxCross2 } from "react-icons/rx";
 import notificationData from "../assets/vehicle.json";
 import NotificationCard from "./NotificationCard";
 import Select, { components } from "react-select";
-import vehicleData from "../assets/vehicle.json";
+import { useVehicle } from "../context/VehicleContext";
 
-const MAX_DISPLAY = 2;
+const MAX_DISPLAY = 2;  
 
 const CustomValueContainer = ({ children, ...props }) => {
   const selected = props.getValue();
@@ -65,24 +65,22 @@ const Navbar = ({ onToggleSidebar, onMultiVehicleSearch }) => {
   const [toggleFilter, setToggleFilter] = useState(false);
   const [theme, setTheme] = useState("Dark");
   const [selectedOptions, setSelectedOptions] = useState([]);
+  const [vehicleeOptions, setVehicleeOptions] = useState([]);
   const [poiForm, setPoiForm] = useState({
     name: "",
     radius: "",
     latitude: "",
     longitude: "",
   });
+  const {vehicles}=useVehicle();
   const dropdownRef = useRef(null);
 
   const toggleFilterPanel = () => {
-    console.log("Filter panel is open now you can filter from the following");
     setToggleFilter((prev) => !prev);
   };
 
   const toggleUserButton = () => {
     setUserButton((prev) => !prev);
-    console.log(
-      "User menu panel is open and click you can change the password or logout from the platform."
-    );
   };
 
   const toggleTheme = () => {
@@ -106,7 +104,6 @@ const Navbar = ({ onToggleSidebar, onMultiVehicleSearch }) => {
   };
 
   const handleSubmitPOI = () => {
-    console.log("Submitted POI:", poiForm);
     setShowPOIModal(false);
   };
 
@@ -121,7 +118,7 @@ const Navbar = ({ onToggleSidebar, onMultiVehicleSearch }) => {
     }
   };
 
-  const vehicleOptions = vehicleData.vehicles.map((v) => ({
+  const vehicleOptions = vehicles.map((v) => ({
     value: v.vehicleNumber,
     label: v.vehicleNumber,
   }));
@@ -138,7 +135,7 @@ const Navbar = ({ onToggleSidebar, onMultiVehicleSearch }) => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full h-16 bg-black text-white flex items-center justify-between px-4 z-50 shadow-white shadow-sm">
+      <nav className="fixed top-0 left-0 w-full h-16 border-b bg-white text-white flex items-center justify-between px-4 z-50 shadow-sm">
         <div className="flex items-center gap-3">
           <button className="md:hidden" onClick={onToggleSidebar}>
             <Menu />
@@ -157,7 +154,7 @@ const Navbar = ({ onToggleSidebar, onMultiVehicleSearch }) => {
                   size={28}
                 />
                 <SlidersHorizontal
-                  className="text-white text-2xl hover:text-gray-500 cursor-pointer mx-3"
+                  className="text-black text-2xl hover:text-gray-500 cursor-pointer mx-3"
                   onClick={toggleFilterPanel}
                 />
                 <Select
@@ -183,7 +180,7 @@ const Navbar = ({ onToggleSidebar, onMultiVehicleSearch }) => {
                 />
 
                 <button
-                  className="bg-indigo-500 text-white px-5 py-2 rounded-md mx-2 hover:bg-blue-600"
+                  className="bg-cyan-600 text-white px-5 py-2 rounded-md mr-2 hover:bg-cyan-700"
                   onClick={handleMultiVehicleSearch}
                 >
                   Search
@@ -212,7 +209,7 @@ const Navbar = ({ onToggleSidebar, onMultiVehicleSearch }) => {
       {settingMenu && (
         <div
           ref={dropdownRef}
-          className="absolute top-14 right-20 bg-white shadow-lg rounded-md p-2 z-50 w-40"
+          className="absolute top-14 right-20 bg-white shadow-lg rounded-md p-2 z-[80] w-40"
         >
           <button
             onClick={() => {

@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Content from "../components/Content";
 import MapSection from "../components/MapSection";
-import { TbArrowsLeft } from "react-icons/tb";
+import { TbArrowsLeft, TbMap, TbLayoutSidebarLeftExpand } from "react-icons/tb";
 import Sidebar from "../components/Sidebar";
 
 const DashBoard = () => {
@@ -10,6 +10,9 @@ const DashBoard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [leftWidth, setLeftWidth] = useState(50); // percentage
   const [isDragging, setIsDragging] = useState(false);
+  const [selectedVehicleNumbers, setSelectedVehicleNumbers] = useState([]);
+  const [isFullMap, setIsFullMap] = useState(false);
+
   const containerRef = useRef(null);
 
   const handleShowRoute = () => setShowRoute(true);
@@ -25,6 +28,10 @@ const DashBoard = () => {
     if (newLeftWidth > 20 && newLeftWidth < 80) {
       setLeftWidth(newLeftWidth);
     }
+  };
+
+  const handleMultipleVehicleSearch = (vehicleNumbers) => {
+    setSelectedVehicleNumbers(vehicleNumbers);
   };
 
   // Listen to mousemove and mouseup globally
@@ -52,9 +59,17 @@ const DashBoard = () => {
     }
   };
 
+  // Toggle full map view
+  const handleMapToggle = () => {
+    setIsFullMap(!isFullMap);
+  };
+
   return (
     <div className="h-screen w-screen overflow-hidden bg-white dark:text-white">
-      <Navbar onToggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
+      <Navbar
+        onMultiVehicleSearch={handleMultipleVehicleSearch}
+        onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
+      />
 
       <Sidebar
         onSelect={() => {
@@ -65,32 +80,56 @@ const DashBoard = () => {
       />
 
       <div
-        className="md:ml-20 bg-black mt-16 flex h-[calc(100vh-4rem)] relative"
+        className="md:ml-20 bg-white mt-16 flex h-[calc(100vh-4rem)] relative"
         ref={containerRef}
       >
         {/* Content Section */}
         <div
-          className="h-full overflow-auto p-2"
-          style={{ width: `${leftWidth}%` }}
+          className={`overflow-hidden transition-all duration-300 ${isFullMap ? 'hidden' : ''}`}
+          style={{ width: `${leftWidth}%`, height: "100%" }}
         >
-          <Content onShowRoute={handleShowRoute} />
+          <div className="h-full overflow-y-auto p-2">
+            <Content
+              selectedVehicleNumbers={selectedVehicleNumbers}
+              onShowRoute={handleShowRoute}
+            />
+          </div>
         </div>
 
         {/* Resizer */}
         <div
           onMouseDown={startDragging}
           onClick={handleToggleClick}
-          className="w-2 cursor-col-resize bg-gray-400 hover:bg-gray-500 transition relative z-10 flex justify-center items-center"
+          className={`w-2 cursor-col-resize bg-black hover:bg-gray-800 transition relative z-10 flex justify-center items-center ${isFullMap ? 'hidden' : ''}`}
         >
           <TbArrowsLeft className="text-white rotate-90" />
         </div>
 
+        {/* Map Toggle Button */}
+        <div className="absolute top-4 right-4 z-20">
+          <button
+            onClick={handleMapToggle}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg transition-colors duration-200 flex items-center gap-2"
+            title={isFullMap ? "Content Panel" : "Map View"}
+          >
+            {isFullMap ? (
+              <>
+                <TbLayoutSidebarLeftExpand title="View Content" className="text-lg" />
+              </>
+            ) : (
+              <>
+                <TbMap title="View Map" className="text-lg" />
+              </>
+            )}
+          </button>
+        </div>
+
         {/* Map Section */}
         <div
-          className="h-full"
-          style={{ width: `${100 - leftWidth}%`, minWidth: "10%" }}
+          className={`h-full transition-all duration-300 ${isFullMap ? 'w-full' : ''}`}
+          style={{ width: isFullMap ? '100%' : `${100 - leftWidth}%`, minWidth: "10%" }}
         >
-          <MapSection showRoute={showRoute} />
+          <MapSection selectedVehicleNumbers={selectedVehicleNumbers} showRoute={showRoute} />
         </div>
       </div>
     </div>

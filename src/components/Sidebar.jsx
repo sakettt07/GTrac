@@ -18,7 +18,7 @@ const Sidebar = ({ isOpen, onSelect }) => {
 
   return (
     <div
-      className={`fixed top-16 z-40 bg-black shadow-white shadow-md text-white h-full p-4 space-y-3 flex flex-col items-center transition-transform duration-300
+      className={`fixed top-16 z-40 bg-white shadow-white text-black border-t border-r-gray-400 h-full p-4 space-y-3 flex flex-col items-center transition-transform duration-300
       md:w-20 md:left-0 ${isOpen ? 'left-0 w-64' : 'left-[-100%] md:left-0'}`}
     >
       <button
